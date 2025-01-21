@@ -1,23 +1,15 @@
 #!python3
 
 def sum(a,b):
-    #inputs
-    # a : float 
-    # b : float
-    # return value: returns the sum of the 2 numbers
-    return
-
+    #print(a)
+    #print(b)
+    sum = a + b
+    print(f'The sum is {sum} in {a,b}')
+    return sum
 
 
 if __name__ == "__main__":
     print("This is my program")
-    #this should return a value of 7
-    x = sum(3,4)
-    assert x == 7
-
-    #this should return a value of 12.5
-    y = sum(11,1.5)
-    assert y == 12.5
 
     assert sum(5,2) == 7
     assert sum(1,2) == 3

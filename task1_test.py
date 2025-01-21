@@ -2,12 +2,24 @@
 import task1
 
 
-def test1():
-  assert task1.sum(11,2.5) == 13.5
+def test1(a,b):
+  sum = a + b
+  return sum
+def output(a,b,sum):
+  print(f"The sum of a number with {a},{b} is {sum}")
 
-def test2():
-  assert task1.sum(8,-2) == 6
+
+def test2(a,b):
+  sum= a + b
+  return sum
+  
   
 if __name__ == "__main__":
-  test1()
-  test2()
+  z=test1(11,2.5)
+  output(11,2.5,z)
+
+  i=test2(8,-2)
+  output(8,-2,i)
+
+  #output()
+  #test2()

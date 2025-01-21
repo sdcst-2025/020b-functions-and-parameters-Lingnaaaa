@@ -7,8 +7,19 @@ Return False if the number is not an integer
 (2 points)
 """
 
-def isInteger():
-    return
+def isInteger(number):
+    try:
+      if number%1==0 or number==0:
+       print('True')
+       return True
+      elif number%1!=0:
+       print('False')
+       return False
+    except:
+       print('False')
+       return False
+
+
 
 if __name__ == "__main__":
   assert isInteger( 9.5 ) == False

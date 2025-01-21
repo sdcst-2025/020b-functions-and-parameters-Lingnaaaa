@@ -10,8 +10,19 @@ Example: The factors of 10 are 1, 2, 5, 10
 """
 
 def factors(x):
-    l = []
-    return l
+    mylist=[]
+    x=int(x)
+    if x <=0:
+        print('The number must be positive integer')
+        pass
+    if x>0:
+      for i in range(1,10000):
+        if x%i==0:
+            mylist.append(i)
+        n = factors(10)
+    return mylist
+
+
 
 if __name__ == "__main__":
     n = factors(10)
